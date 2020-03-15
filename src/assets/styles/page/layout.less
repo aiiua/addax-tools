@@ -1,0 +1,65 @@
+img {
+    width: 100%;
+    height: auto;
+}
+
+body, a {
+    color: @primary;
+}
+
+.opacity-8 {
+    opacity: .8!important;
+}
+
+.@{a}layout {
+    padding: 24px;
+    background-color: @primary;
+
+    &-container {
+        display: flex;
+        width: 100%;
+        height: calc(100vh - 48px);
+        overflow: hidden;
+        background-color: @white;
+        border-radius: 24px;
+        box-shadow: 0 2px 16px #000;
+    }
+
+    &-sider {
+        position: relative;
+        flex: 0 0 360px;
+        padding: 48px 0;
+        text-align: center;
+
+        img {
+            width: 260px;
+        }
+
+        h1 {
+            font-size: 30px;
+            line-height: 38px;
+            text-align: center;
+            margin-top: 48px;
+            margin-bottom: 12px;
+        }
+
+        .footer-link {
+            position: absolute;
+            bottom: 48px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+
+            a {
+                color: @content;
+            }
+        }
+    }
+
+    &-content {
+        flex: 1;
+        padding: 48px;
+        background-color: @background;
+        .overflow-y();
+    }
+}
