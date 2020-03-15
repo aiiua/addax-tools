@@ -1,0 +1,41 @@
+.@{a}panel {
+
+    &-body {
+        margin-top: 24px;
+
+        .ivu-col {
+            margin-bottom: 24px;
+            backface-visibility: hidden;
+            transform: translate3d(0,0,0);
+            transition-timing-function: cubic-bezier(.25,.1,.2,1);
+        }
+    }
+    
+
+    &-item {
+        background: @white;
+        padding: 24px;
+        border-radius: 12px;
+        border: 1px solid #E5E5E5;
+        transition: .25s;
+
+        h3 {
+            margin: 12px 0;
+        }
+
+        p {
+            .ellipsis(2);
+            height: 42px;
+        }
+
+        &:hover {
+            border-color: transparent!important;
+            opacity: 1;
+            box-shadow: 0 10px 40px rgba(0,0,0,.2);
+
+            a {
+                color: @primary;
+            }
+        }
+    }
+}
