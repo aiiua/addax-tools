@@ -18,4 +18,11 @@ const router = new VueRouter({
     routes
 })
 
+router.beforeEach((to, from, next) => {
+    // 统计代码
+    // _hmt.push(['_trackPageview', pageURL]) 必须是以"/"（斜杠）开头的相对路径
+    if (to.path) window._hmt.push(['_trackPageview', '/#' + to.fullPath])
+    next()
+})
+
 export default router
