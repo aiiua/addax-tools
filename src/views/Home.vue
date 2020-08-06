@@ -60,6 +60,13 @@ export default {
                     href: 'https://clideo.com/cut-audio'
                 },
                 {
+                    id: 'audiomass',
+                    icon: 'maiketubiao',
+                    title: '音频剪辑',
+                    subtitle: '一个免费、开放源码的线上音频编辑器',
+                    href: 'https://audiomass.co/'
+                },
+                {
                     id: 'bearaudiotool',
                     icon: 'labtubiao',
                     title: '在线MP3剪切',
