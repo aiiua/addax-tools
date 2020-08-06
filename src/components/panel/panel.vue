@@ -10,7 +10,7 @@
         <div class="addax-panel-body">
             <Row :gutter="24">
                 <template v-for="item in data">
-                    <Col :key="item.id" :xs="12" :sm="8" :md="8" :lg="8" :xl="8" :xxl="6">
+                    <Col :key="item.id" :xs="24" :sm="12" :md="8" :lg="8" :xl="8" :xxl="6">
                         <div class="addax-panel-item" :key="item.id">
                             <a :href="item.href" target="_blank">
                                 <Icon :custom="`iconfont icon-${item.icon}`" :size="32"></Icon>

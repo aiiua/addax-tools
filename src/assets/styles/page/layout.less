@@ -30,6 +30,7 @@ body, a {
         flex: 0 0 360px;
         padding: 48px 0;
         text-align: center;
+        display: block;
 
         img {
             width: 260px;
@@ -61,5 +62,12 @@ body, a {
         padding: 48px;
         background-color: @background;
         .overflow-y();
+    }
+}
+
+
+@media (max-width: 992px) { 
+    .addax-layout-sider {
+        display: none;
     }
 }
